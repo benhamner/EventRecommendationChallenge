@@ -8,7 +8,7 @@ def main():
     for user in sorted(user_events_dict):
         random.shuffle(user_events_dict[user])
 
-    u.write_submission("random.csv", user_events_dict)
+    u.write_submission("random_benchmark.csv", user_events_dict)
 
 if __name__=="__main__":
     main()

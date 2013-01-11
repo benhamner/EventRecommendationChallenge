@@ -73,7 +73,7 @@ def main():
 
     train_users_list = sorted(users_list[:p60cutoff])
     train_users_set = set(train_users_list)
-    public_leaderboard_users_list = sorted(users_list[:p70cutoff])
+    public_leaderboard_users_list = sorted(users_list[p60cutoff:p70cutoff])
     public_leaderboard_users_set = set(public_leaderboard_users_list)
     private_leaderboard_users_list = sorted(users_list[p70cutoff:])
     private_leaderboard_users_set = set(private_leaderboard_users_list)

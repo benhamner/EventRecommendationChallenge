@@ -12,7 +12,7 @@ def main():
         user_events_dict[user] = sorted(user_events_dict[user],
             key=lambda e: len(event_yes[e]), reverse=True)
 
-    u.write_submission("given_order_benchmark.csv", user_events_dict)
+    u.write_submission("event_popularity_benchmark.csv", user_events_dict)
 
 if __name__=="__main__":
     main()
